@@ -5,69 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JankyHand Games | Portfolio</title>
     <link rel="icon" href="./images/Logo.png" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <img src="./images/Logo.png" alt="Developer Studio Logo" width="250">
+  <body class="page-body">
+    <header class="site-header">
+      <div class="header-brand">
+        <img src="./images/Logo.png" alt="Jankyhand Games Logo" width="250" class="studio-logo" />
+        <h1 class="site-title">Jankyhand Games</h1>
+      </div>
 
-    <!-- Main Header -->
-    <h1>Jankyhand Games</h1>
-    <p>Welcome! I am an <strong>independent developer</strong> who creates engaging <em>3D</em> games.</p>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#workflow">Tech Workflow</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-    <button>Dark Mode</button>
+      <button type="button" class="theme-toggle-btn">Dark Mode</button>
+    </header>
 
-    <hr>
+    <hr />
 
-    <!-- Section 1 -->
-    <h2>My Projects</h2>
-    
-    <h3>Backburner</h3>
-    <p>
-        This is a <strong>3D simulator</strong> where players can manage their own food truck business. <br>
-        The game is available on <a href="https://store.steampowered.com/app/4410980/Backburner/" target="_blank"><u>Steam</u></a> and features regular content updates. <br>
-        <a href="backburner.html">Read more about Backburner</a>
-    </p>
+    <main class="main-content">
+      <section class="intro-section" aria-label="Introduction">
+        <p class="intro-text">
+          Welcome! I am an <strong class="highlight">independent developer</strong> who creates engaging
+          <em class="genre-emphasis">3D</em> games.
+        </p>
+      </section>
 
-    <h3>SANATORIUM 84</h3>
-    <p>
-        I am currently working on a new <em>horror-genre</em> game focusing on <strong>smart artificial intelligence (AI)</strong> and immersive atmospheric environments. <br>
-        <a href="sanatorium84.html">Read more about SANATORIUM 84</a>
-    </p>
-    <a href="#contact">Contact Information</a>
-    <hr>
+      <hr />
 
-    <!-- Section 2: Lists -->
-    <h2>Technologies & Development Stages</h2>
+      <!-- Section 1: Projects -->
+      <section id="projects" class="projects-section">
+        <h2 class="projects-title">My Projects</h2>
 
-    <h3>Technologies Used (ul)</h3>
-    <ul>
-        <li>Unity Engine / C#</li>
-        <li>Low-Poly 3D Modeling</li>
-        <li>HTML & CSS for Web Development</li>
-    </ul>
+        <article class="project-card">
+          <h3>Backburner</h3>
+          <p class="project-desc">
+            This is a <strong>3D simulator</strong> where players can manage their own food truck
+            business. <br />
+            The game is available on
+            <a href="https://store.steampowered.com/app/4410980/Backburner/" target="_blank"><u>Steam</u></a>
+            <span class="badge">Early Access</span> and features regular content updates. <br />
+            <a href="backburner.html" class="project-link">Read more about Backburner</a>
+          </p>
+        </article>
 
-    <h3>Game Development Stages (ol with Nested List)</h3>
-    <ol>
-        <li>Idea and Concept</li>
-        <li>
-            Prototyping (Mechanics & Gameplay)
+        <article class="project-card">
+          <h3>SANATORIUM 84</h3>
+          <p class="project-desc">
+            I am currently working on a new <em>horror-genre</em> game focusing on
+            <strong>smart artificial intelligence (AI)</strong> and immersive atmospheric
+            environments. <br />
+            <a href="sanatorium84.html" class="project-link">Read more about SANATORIUM 84</a>
+          </p>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- Section 2: Lists -->
+      <section id="workflow" class="workflow-section">
+        <h2>Technologies  Development Stages</h2>
+
+        <h3>Technologies Used</h3>
+        <ul class="tech-list">
+          <li>Unity Engine / C#</li>
+          <li>Low-Poly 3D Modeling</li>
+          <li>HTML CSS for Web Development</li>
+        </ul>
+
+        <h3>Game Development Stages</h3>
+        <ol class="stages-list">
+          <li>Idea and Concept</li>
+          <li>
+            Prototyping (Mechanics Gameplay)
             <!-- Nested List -->
             <ul>
-                <li>Character movement systems</li>
-                <li>Inventory and interaction slots</li>
-                <li>AI navigation routing</li>
+              <li>Character movement systems</li>
+              <li>Inventory and interaction slots</li>
+              <li>AI navigation routing</li>
             </ul>
-        </li>
-        <li>Design and Lighting</li>
-        <li>Testing and Early Access Release</li>
-    </ol>
+          </li>
+          <li>Design and Lighting</li>
+          <li>Testing and Early Access Release</li>
+        </ol>
+      </section>
 
-    <hr>
+      <aside id="contact" class="contact-aside">
+        <h2>Contact Information</h2>
+        <p>
+          To stay updated on patch notes and dev logs, join my <strong>Discord</strong> community or
+          reach out via email: <br />
+          <a href="mailto:jankyhandgames@gmail.com" class="email-link">jankyhandgames@gmail.com</a>
+        </p>
+      </aside>
+    </main>
 
-    <!-- Section 3 -->
-    <h2 id="contact">Contact Information</h2>
-    <p>
-        To stay updated on patch notes and dev logs, join my <strong>Discord</strong> community or reach out via email: <br>
-        <a href="mailto:jankyhandgames@gmail.com">jankyhandgames@gmail.com</a>
-    </p>
+    <hr />
+
+    <footer class="site-footer">
+      <p><span class="copyright-year">2026</span> Jankyhand Games. All rights reserved.</p>
+    </footer>
   </body>
 </html>
