@@ -1,18 +1,19 @@
-.page-body{
+/* I used Unifont Regular from fonts.ge */
+@font-face {
+    font-family: "pixelGeorgian";
+    src: url("./fonts/unifont-regular.otf") format("opentype");
+}
+
+body {
+    font-family: "pixelGeorgian", sans-serif;
+}
+
+.page-body {
     background-color: #101014;
 }
-.intro-text,.project-desc,.tech-list,.stages-list,.contact-info,.copyright-year{
-    color: #B8B8C2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.7;
-    letter-spacing: 0.2px;
-    text-align: left;
-    text-decoration: none;
-}
-.site-title, .projects-title, .game-title{
+
+/* Header */
+.site-title {
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
@@ -24,31 +25,8 @@
     text-transform: uppercase;
     text-decoration: underline;
 }
-.project-title{
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: 0px;
-    text-align: left;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.project-link, .external-link, .email-link, .steam-btn, .status-label{
-    color: #D1D1D8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: 1.5px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.theme-btn{
+
+.theme-btn {
     background-color: #8B5CF6;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
@@ -61,7 +39,13 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.nav-list{
+
+h1 {
+    font-family: "Google Sans", sans-serif;
+}
+
+/* Navigation */
+.nav-list {
     color: #A78BFA;
     font-size: 26px;
     font-weight: 700;
@@ -72,6 +56,72 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.nav-ul{
+
+.nav-ul {
     list-style: none;
+}
+
+/* Main Content */
+.intro-text, .project-desc, .tech-list, .stages-list, .contact-info {
+    color: #B8B8C2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.projects-title, .game-title {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.project-title {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.project-link, .external-link, .email-link, .steam-btn, .status-label {
+    color: #D1D1D8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Footer */
+.copyright-year {
+    color: #B8B8C2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    text-align: left;
+    text-decoration: none;
 }
