@@ -14,14 +14,22 @@
     <header class="site-header">
       <h1 class="game-title">Backburner</h1>
       <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <a href="index.html" class="project-link">Back to Main Portfolio</a>
+        <a href="index.html" class="back-to-portfolio-link">Back to Main Portfolio</a>
+      </nav>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-ul">
+          <li><a href="#about" class="nav-list">About</a></li>
+          <li><a href="#screenshots" class="nav-list">Screenshots</a></li>
+          <li><a href="#trailer" class="nav-list">Trailer</a></li>
+          <li><a href="./contact.html" class="nav-list">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <hr />
 
     <main class="game-details-main">
-      <article class="game-overview">
+      <article id="about" class="game-overview">
         <img
           src="./images/BB.png"
           alt="Backburner Screenshot"
@@ -34,20 +42,44 @@
           Take control of your very own food truck business! Prepare dishes, upgrade your vehicle,
           manage inventory, and serve hungry customers in a vibrant 3D low-poly world.
         </p>
-      </article>
-
-      <aside class="store-box">
         <h2 class="project-title">Get the Game</h2>
         <p>
           <a
             href="https://store.steampowered.com/app/4410980/Backburner/"
             target="_blank"
-            class="steam-btn"
+            class="game-link"
           >
             Buy or Wishlist on Steam
           </a>
-        </p>
-      </aside>
+      </article>
+      <div  id="screenshots" class="game-screenshots">
+        <img
+          src="./images/BackBurner-1.png"
+          alt="Backburner Screenshot 1"
+          class="bb-screenshot">
+          <img
+          src="./images/BackBurner-2.png"
+          alt="Backburner Screenshot 2"
+          class="bb-screenshot">
+          <img
+          src="./images/BackBurner-3.png"
+          alt="Backburner Screenshot 3"
+          class="bb-screenshot">
+          <img
+          src="./images/BackBurner-4.png"
+          alt="Backburner Screenshot 4"
+          class="bb-screenshot">
+          <img
+          src="./images/BackBurner-5.png"
+          alt="Backburner Screenshot 5"
+          class="bb-screenshot">
+      </div>
+      <div  id="trailer" class="bb-trailer">
+        <video controls autoplay muted loop class="bb-trailer">
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </main>
 
     <hr />
